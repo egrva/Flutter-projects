@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:home_works/homework2/dataLoader.dart';
-import 'package:home_works/homework2/personWidget.dart';
+import 'package:home_works/bonus_feature/dataLoader.dart';
+import 'package:home_works/bonus_feature/personWidget.dart';
+
 
 class BonusFeature extends StatefulWidget {
   BonusFeature({Key? key}) : super(key: key);

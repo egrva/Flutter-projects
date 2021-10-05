@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:home_works/homework2/personLoader.dart';
+import 'package:home_works/bonus_feature/personLoader.dart';
 
 class PersonDetailsPage extends StatefulWidget {
   const PersonDetailsPage({Key? key, required this.id}) : super();
