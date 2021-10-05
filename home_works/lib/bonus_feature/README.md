@@ -7,4 +7,4 @@
 
 Выводится список всех доступных персонажей, при клике на имя, открывается страничка с картинкой
 
-<img src="images/2.png" width="425"/> <img src="images/img3.png" width="425"/>
+<img src="images/2.png" width="425"/> <img src="images/3.png" width="425"/>
