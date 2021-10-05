@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:home_works/homework2/dataLoader.dart';
 import 'package:home_works/homework2/personWidget.dart';
 
-class Hw2 extends StatefulWidget {
-  Hw2({Key? key}) : super(key: key);
-  final String title = "Home work #2";
+class BonusFeature extends StatefulWidget {
+  BonusFeature({Key? key}) : super(key: key);
+  final String title = "Bonus Feature";
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<Hw2> {
+class _MyHomePageState extends State<BonusFeature> {
   List<Person>? _characters;
   Exception? _exception;
 
