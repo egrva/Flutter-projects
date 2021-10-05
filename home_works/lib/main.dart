@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_works/homework1/hw1.dart';
+import 'package:home_works/homework2/bonus_feature.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,7 +29,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Map<String, Widget> homeworks = {"Homework #1": Hw1()};
+  Map<String, Widget> homeworks = {"Homework #1": Hw1(), "Bonus feature": BonusFeature()};
 
   @override
   Widget build(BuildContext context) {
