@@ -21,5 +21,5 @@ GET - получение всех сообщений в чате
 В своей домашке я использовала [Mobx](https://pub.dev/packages/mobx), 
 [Dio](https://pub.dev/packages/dio) и [Retrofit](https://pub.dev/packages/retrofit)
 
-<img src="images/img1.png" width="425"/> <img src="images/img2.png" width="425"/>
-<img src="images/img3.png" width="425"/> <img src="images/img4.png" width="425"/>
+<img src="images/1.png" width="425"/> <img src="images/2.png" width="425"/>
+<img src="images/3.png" width="425"/> <img src="images/4.png" width="425"/>
