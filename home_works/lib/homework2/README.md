@@ -8,12 +8,13 @@
 По API:
 url: https://itis-chat-app-ex.herokuapp.com/chat
 POST - отправка сообщения, в body отправляем json, пример:
-''''json
+
+```json
 {
-"author": "Aynur",
-"message": "Hello"
+  "author": "Aynur",
+  "message": "Hello"
 }
-''''
+```
 
 GET - получение всех сообщений в чате
 
