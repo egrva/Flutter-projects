@@ -1,28 +1,38 @@
 import 'dart:math';
 
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:home_works/homework2/message_store.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 const MY_NAME = "Anastasiia";
 
 class Hw2 extends StatefulWidget {
   Hw2({Key? key}) : super(key: key);
 
-  final String title = "Home work 2";
+  final String title = "Homework 2";
 
   @override
   _Hw2State createState() => _Hw2State();
 }
 
 class _Hw2State extends State<Hw2> {
-  MessageStore _messageStore = MessageStore();
+  MessageStore _messageStore = Modular.get<MessageStore>();
 
   @override
   void initState() {
     super.initState();
     _messageStore.fetchNewMessage();
+    initFirebase();
+  }
+
+  Future<void> initFirebase() async {
+    await Firebase.initializeApp();
+    FirebaseMessaging messaging = FirebaseMessaging.instance;
+    messaging.getToken().then((token) => print(token));
   }
 
   TextEditingController _textEditingController = TextEditingController();

@@ -41,10 +41,6 @@ class _Hw1State extends State<Hw1> {
                         title: Text(item,
                             style: const TextStyle(
                                 color: Colors.pink, fontSize: 16)),
-                        onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => DetailInfo(title: item)));
-                        },
                       );
                     }).toList(),
                   ),

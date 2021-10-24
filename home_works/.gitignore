@@ -3,7 +3,7 @@
 *.log
 *.pyc
 *.swp
-.DS_Store
+/.DS_Store
 .atom/
 .buildlog/
 .history
@@ -13,7 +13,7 @@
 *.iml
 *.ipr
 *.iws
-.idea/
+/.idea/
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
@@ -23,12 +23,12 @@
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-.pub-cache/
-.pub/
+/.dart_tool/
+/.flutter-plugins
+/.flutter-plugins-dependencies
+/.packages
+/.pub-cache/
+/.pub/
 /build/
 
 # Web related
@@ -45,3 +45,6 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 /.idea/
+/.dart_tool/
+/.idea/
+/build/
