@@ -15,7 +15,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Map<String, String> homeworks = {
     "Bonus feature": '/Bonus',
     "Homework #1": '/Hw1',
-    "Homework #2": '/Hw2'
+    "Homework #2": '/Hw2',
+    "Homework #4": '/Hw4'
   };
 
   @override
