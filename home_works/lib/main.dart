@@ -1,8 +1,23 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:hive/hive.dart';
 import 'package:home_works/homework3/modules/app_module.dart';
+import 'package:home_works/homework5/model/models.dart';
+import 'package:path_provider/path_provider.dart';
 
-void main() {
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  Directory directory = await getApplicationDocumentsDirectory();
+  Hive
+    ..init(directory.path)
+    ..registerAdapter(PostAdapter())
+    ..registerAdapter(UserAdapter())
+    ..registerAdapter(CommentAdapter())
+    ..registerAdapter(PostContainerAdapter());
+  await Hive.openBox<PostContainer>('postss');
   runApp(ModularApp(module: AppModule(), child: MyApp()));
 }
 

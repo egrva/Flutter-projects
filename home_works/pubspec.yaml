@@ -72,12 +72,13 @@ flutter:
   assets:
     - assets/homeworks/
     - assets/avatars/
-    - assets/instagram
+    - assets/instagram/
+    - assets/instagram/icons/
 
   fonts:
     - family: Billabong
       fonts:
-        - asset: Resources/fonts/Billabong.ttf
+        - asset: assets/instagram/fonts/Billabong.ttf
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
