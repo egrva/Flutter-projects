@@ -16,7 +16,8 @@ class _MyHomePageState extends State<MyHomePage> {
     "Bonus feature": '/Bonus',
     "Homework #1": '/Hw1',
     "Homework #2": '/Hw2',
-    "Homework #4": '/Hw4'
+    "Homework #4": '/Hw4',
+    "Homework #5": '/Hw5',
   };
 
   @override
